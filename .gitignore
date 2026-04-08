@@ -1,0 +1,14 @@
+# Ignore dataset
+data/
+
+# Ignore virtual environment
+venv/
+
+# Ignore system files
+__pycache__/
+*.pyc
+
+# Ignore outputs (optional)
+*.pkl
+*.png
+features.csv
