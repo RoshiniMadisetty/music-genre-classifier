@@ -17,8 +17,8 @@ from sklearn.metrics import (
 df = pd.read_csv("features.csv")
 print(f"Dataset: {df.shape[0]} samples × {df.shape[1]-2} features")
 
-feature_cols = [c for c in df.columns if c.startswith("f")]
-X = df[feature_cols].values          # shape: (1000, 51)
+# Remove non-numeric columns explicitly
+X = df.drop(columns=["file", "genre"]).values
 y_labels = df["genre"].values
 
 # Encode genre strings → integers

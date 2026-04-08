@@ -1,14 +1,18 @@
-# Ignore dataset
+# Dataset
 data/
 
-# Ignore virtual environment
+# Virtual environment
 venv/
 
-# Ignore system files
+# Python cache
 __pycache__/
 *.pyc
 
-# Ignore outputs (optional)
+# Generated files
 *.pkl
 *.png
 features.csv
+
+# OS files
+.DS_Store
+Thumbs.db
